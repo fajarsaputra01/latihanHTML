@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Toko Online</h1>
+            <nav>
+                <a href="#" class="px-4">Home</a>
+                <a href="#products" class="px-4">Products</a>
+                <a href="#about" class="px-4">About</a>
+                <a href="#contact" class="px-4">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8">
+        <!-- Hero Section -->
+        <section class="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">Welcome to Our Online Store</h2>
+            <p class="text-gray-600">Find the best products at unbeatable prices!</p>
+            <button class="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Shop Now</button>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Our Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://via.placeholder.com/150" alt="Product Image" class="rounded-md mb-4">
+                    <h3 class="font-bold">Product 1</h3>
+                    <p class="text-gray-600">$10.00</p>
+                    <button class="mt-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Add to Cart</button>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://via.placeholder.com/150" alt="Product Image" class="rounded-md mb-4">
+                    <h3 class="font-bold">Product 2</h3>
+                    <p class="text-gray-600">$15.00</p>
+                    <button class="mt-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Add to Cart</button>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://via.placeholder.com/150" alt="Product Image" class="rounded-md mb-4">
+                    <h3 class="font-bold">Product 3</h3>
+                    <p class="text-gray-600">$20.00</p>
+                    <button class="mt-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-bold mb-4">About Us</h2>
+            <p class="text-gray-600">We are committed to providing high-quality products and excellent customer service.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-xl font-bold mb-4">Contact Us</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" class="w-full p-2 border rounded" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border rounded" placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" class="w-full p-2 border rounded" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Toko Online. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
